@@ -1,0 +1,91 @@
+# Laravel Student Extracurricular Management
+
+Proyek ini adalah sistem manajemen ekstrakurikuler siswa yang dibangun menggunakan **Laravel**.
+
+## 🚀 Instalasi dan Menjalankan Proyek
+
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lokal:
+
+### 1. Clone Repository
+```sh
+git clone https://github.com/username/nama-repo.git
+cd nama-repo
+```
+
+### 2. Instal Dependensi
+```sh
+composer install
+```
+
+### 3. Konfigurasi Environment
+Salin file `.env.example` menjadi `.env` dan sesuaikan konfigurasi database:
+```sh
+cp .env.example .env
+```
+Lalu edit file `.env` sesuai dengan konfigurasi database kamu:
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nama_database
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 4. Generate Application Key
+```sh
+php artisan key:generate
+```
+
+### 5. Migrasi dan Seeder Database
+Jalankan perintah berikut untuk membuat tabel dan mengisi data dummy (jika ada seeder dibuat):
+```sh
+php artisan migrate --seed
+```
+
+### 6. Instalasi Frontend Dependencies
+Jika menggunakan Laravel Breeze atau fitur frontend lainnya, jalankan perintah berikut:
+```sh
+npm install
+npm run dev
+```
+
+### 7. Jalankan Server Laravel
+```sh
+php artisan serve
+```
+Aplikasi akan berjalan di `http://127.0.0.1:8000`
+
+## 📄 Struktur Proyek
+```
+app/
+├── Models/         # Model Eloquent seperti Student dan Extracurricular
+├── Http/
+│   ├── Controllers/  # Controller untuk mengelola request
+│   ├── Middleware/   # Middleware untuk autentikasi
+├── database/
+│   ├── migrations/   # File migrasi database
+│   ├── seeders/      # File seeder database
+├── resources/
+│   ├── views/        # Blade template untuk tampilan frontend
+├── routes/
+│   ├── web.php       # Route untuk aplikasi berbasis web
+│   
+```
+
+## 🔧 Fitur Utama
+✅ Manajemen data siswa dan ekstrakurikuler
+✅ Relasi antara siswa dan ekstrakurikuler
+✅ Migrasi database otomatis
+
+## 🤝 Kontribusi
+Jika ingin berkontribusi, lakukan **Fork** repository ini, buat branch baru, dan ajukan **Pull Request**.
+
+## 📞 Kontak
+Jika ada pertanyaan, hubungi saya:
+- 📧 Email: mabyzar23@gmail.com
+- 📞 WhatsApp: 082250925782
+
+---
+
+Selamat mengembangkan! 🚀
